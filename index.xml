@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Initio - Free, multipurpose html5 template by GetTemplate</title>
+    <link>https://miguelsimoni.github.io/hugo-initio-site/</link>
+    <description>Recent content on Initio - Free, multipurpose html5 template by GetTemplate</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 10 May 2021 21:11:49 -0400</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 27 May 2021 22:10:13 -0400</lastBuildDate><atom:link href="https://miguelsimoni.github.io/hugo-initio-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Second Post</title>
-      <link>http://example.org/posts/my-second-post/</link>
-      <pubDate>Mon, 10 May 2021 21:11:49 -0400</pubDate>
+      <title>Test Post</title>
+      <link>https://miguelsimoni.github.io/hugo-initio-site/post/test-post/</link>
+      <pubDate>Thu, 27 May 2021 22:10:13 -0400</pubDate>
       
-      <guid>http://example.org/posts/my-second-post/</guid>
-      <description>test test test.</description>
+      <guid>https://miguelsimoni.github.io/hugo-initio-site/post/test-post/</guid>
+      <description>test test</description>
     </item>
     
     <item>
-      <title>I&#39;m Josh</title>
-      <link>http://example.org/home/</link>
-      <pubDate>Sun, 09 May 2021 22:17:55 -0400</pubDate>
+      <title>Current Feedback</title>
+      <link>https://miguelsimoni.github.io/hugo-initio-site/post/current-feedback/</link>
+      <pubDate>Thu, 27 May 2021 22:06:58 -0400</pubDate>
       
-      <guid>http://example.org/home/</guid>
-      <description>I like taking products from conception to people&amp;rsquo;s hands.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
-      <pubDate>Sun, 09 May 2021 12:50:23 -0400</pubDate>
-      
-      <guid>http://example.org/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
-aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.
-Sed velit dignissim sodales ut eu sem. Lectus urna duis convallis convallis
-tellus. Diam sit amet nisl suscipit adipiscing bibendum est. Sed felis eget
-velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
-ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id
-semper risus in hendrerit gravida rutrum.&lt;/p&gt;</description>
+      <guid>https://miguelsimoni.github.io/hugo-initio-site/post/current-feedback/</guid>
+      <description>Big takeaway: Current feedback opamps are very particular about external component values. You must choose from the list of approved values in the datasheet or spend a lot of time hunting for an optimum value that gives you the gain and also provides stability.
+Summary: I replaced the feedback resistor elements with 510 ohm resistors for Rf and Rg. This gives a gain of two and the widest bandwidth, 1.4GHz, from the OPA695.</description>
     </item>
     
   </channel>

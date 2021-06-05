@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2021-05-10T21:11:49-04:00</lastmod>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/</loc>
+    <lastmod>2021-05-27T22:10:13-04:00</lastmod>
+  </url><url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/post/</loc>
+    <lastmod>2021-05-27T22:10:13-04:00</lastmod>
+  </url><url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/post/test-post/</loc>
+    <lastmod>2021-05-27T22:10:13-04:00</lastmod>
+  </url><url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/post/current-feedback/</loc>
+    <lastmod>2021-05-27T22:06:58-04:00</lastmod>
+  </url><url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/categories/</loc>
+  </url><url>
+    <loc>https://miguelsimoni.github.io/hugo-initio-site/tags/</loc>
   </url>
-  
-  <url>
-    <loc>http://example.org/posts/my-second-post/</loc>
-    <lastmod>2021-05-10T21:11:49-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2021-05-10T21:11:49-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/home/</loc>
-    <lastmod>2021-05-09T22:17:55-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/bar/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/foo/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/categories/</loc>
-  </url>
-  
 </urlset>
