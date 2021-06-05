@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Initio - Free, multipurpose html5 template by GetTemplate</title>
-    <link>https://miguelsimoni.github.io/hugo-initio-site/post/</link>
+    <link>https://joshmarks.xyz/post/</link>
     <description>Recent content in Posts on Initio - Free, multipurpose html5 template by GetTemplate</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 27 May 2021 22:10:13 -0400</lastBuildDate><atom:link href="https://miguelsimoni.github.io/hugo-initio-site/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 May 2021 22:10:13 -0400</lastBuildDate><atom:link href="https://joshmarks.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Post</title>
-      <link>https://miguelsimoni.github.io/hugo-initio-site/post/test-post/</link>
+      <link>https://joshmarks.xyz/post/test-post/</link>
       <pubDate>Thu, 27 May 2021 22:10:13 -0400</pubDate>
       
-      <guid>https://miguelsimoni.github.io/hugo-initio-site/post/test-post/</guid>
+      <guid>https://joshmarks.xyz/post/test-post/</guid>
       <description>test test</description>
     </item>
     
     <item>
       <title>Current Feedback</title>
-      <link>https://miguelsimoni.github.io/hugo-initio-site/post/current-feedback/</link>
+      <link>https://joshmarks.xyz/post/current-feedback/</link>
       <pubDate>Thu, 27 May 2021 22:06:58 -0400</pubDate>
       
-      <guid>https://miguelsimoni.github.io/hugo-initio-site/post/current-feedback/</guid>
+      <guid>https://joshmarks.xyz/post/current-feedback/</guid>
       <description>Big takeaway: Current feedback opamps are very particular about external component values. You must choose from the list of approved values in the datasheet or spend a lot of time hunting for an optimum value that gives you the gain and also provides stability.
 Summary: I replaced the feedback resistor elements with 510 ohm resistors for Rf and Rg. This gives a gain of two and the widest bandwidth, 1.4GHz, from the OPA695.</description>
     </item>
