@@ -6,23 +6,43 @@
     <description>Recent content on Josh Marks&#39; Blog!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jul 2021 11:36:35 -0400</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 18:12:41 -0400</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project 03</title>
-      <link>http://example.org/projects/project-03/</link>
-      <pubDate>Sun, 25 Jul 2021 11:36:35 -0400</pubDate>
+      <title>CMOS Yield Analysis</title>
+      <link>http://example.org/projects/cmos-yield-analysis/</link>
+      <pubDate>Sun, 25 Jul 2021 18:12:41 -0400</pubDate>
       
-      <guid>http://example.org/projects/project-03/</guid>
-      <description>vdfadadfdkdslk;sad;lj</description>
+      <guid>http://example.org/projects/cmos-yield-analysis/</guid>
+      <description>CMOS IC Yield Analysis Overview I had the opportunity to be the Principal Investigator on a phase 2 SBIR Air Force program called AERIA. In this program the goal was to make rectangular shaped Infrared LED (IRLED) emitter hybrids. The hybrids consisted of a CMOS die called a Read-In-Integrated-Circuit (RIIC), and an IRLED emitter die that were bump bonded together. Prior to hybridizing the RIIC and the IRLEDs together the RIIC with the highest pixel operability had to be found.</description>
     </item>
     
     <item>
-      <title>Project 02</title>
-      <link>http://example.org/projects/project-02/</link>
+      <title>Static Electromagnetic Simulator</title>
+      <link>http://example.org/projects/static-bs/</link>
+      <pubDate>Sun, 25 Jul 2021 18:04:35 -0400</pubDate>
+      
+      <guid>http://example.org/projects/static-bs/</guid>
+      <description>Static-bs Is a simple 3D electro-magnetostatic biot-savart solving simulator written in python. I wrote this simulator for some research involving detecting the direction of flow of sea water with a static magnetic field. Charged particles in the water traveled through the magnetic field and caused a corresponding voltage gradient. Plates on a PCB board probed the voltage gradient and determined the direction of flow for the sea water. To my knowledge this has never been done before.</description>
+    </item>
+    
+    <item>
+      <title>16 Bit DAC FMC Card</title>
+      <link>http://example.org/projects/16-bit-dac-fmc/</link>
+      <pubDate>Sun, 25 Jul 2021 17:46:07 -0400</pubDate>
+      
+      <guid>http://example.org/projects/16-bit-dac-fmc/</guid>
+      <description>We required a higher resolution and faster Digital-toAnalog Converter (DAC) for our IRLED micro-display screen. The DAC in this program is responsible for setting the brightness of the IRLED pixel. A little overview diagram of the IRLED micro-display system would help understand the architecture. Below is a block diagram of the different components.
+  The information input for the system starts on the left of this diagram. Input video data comes in and is pre-distorted to account for individual pixel non-uniformity.</description>
+    </item>
+    
+    <item>
+      <title>IRSP Analog Design</title>
+      <link>http://example.org/projects/irsp-analog-design/</link>
       <pubDate>Sun, 25 Jul 2021 10:09:57 -0400</pubDate>
       
-      <guid>http://example.org/projects/project-02/</guid>
-      <description>adasdkjasdfaj;</description>
+      <guid>http://example.org/projects/irsp-analog-design/</guid>
+      <description>UNDER CONSTRUCTION Stay tuned for updates&amp;hellip;
+Outline The Problem My Role The Old Design The New Design </description>
     </item>
     
     <item>

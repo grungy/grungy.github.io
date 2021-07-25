@@ -203,52 +203,64 @@
           
         </div>
       </header><div id="content">
-
-<div class="container py-4 mb-2 mb-sm-0 pb-sm-5">
+<div class="container">
+    
     <div class="row justify-content-center">
-      <div class="col-lg-9">
-        <nav aria-label="breadcrumb">
-          <ol class="py-1 my-2 breadcrumb">
-            <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="/posts/">Blog</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Blog Posts</li>
-          </ol>
-        </nav>
-        <h1 class="mb-5">Projects</h1>
-        <div class="masonry-grid" data-columns="3">
-          
-          
-            
-            <article class="masonry-grid-item" data-groups="[&quot;&quot;]"><a class="card card-hover h-100 border-0 shadow" href="/projects/cmos-yield-analysis/"><img class="card-img-top" src="/images/yield-analysis/airea_wafer.png" alt="Article image">
-                <div class="card-body text-center">
-                  <h3 class="h5 mb-1">CMOS Yield Analysis</h3><span class="fs-sm text-muted"></span>
-                </div></a></article>
+      
+      <div class="col-lg-9 py-4 mb-2 mb-sm-0 pb-sm-5">
+        <div class="pb-4" style="max-width: 38rem;">
+            <nav aria-label="breadcrumb">
+    <ol class="py-1 my-2 breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
         
             
-            <article class="masonry-grid-item" data-groups="[&quot;&quot;]"><a class="card card-hover h-100 border-0 shadow" href="/projects/static-bs/"><img class="card-img-top" src="/images/static-bs/regular_octagon_helmholtz_71.53mm_radius.png" alt="Article image">
-                <div class="card-body text-center">
-                  <h3 class="h5 mb-1">Static Electromagnetic Simulator</h3><span class="fs-sm text-muted"></span>
-                </div></a></article>
         
             
-            <article class="masonry-grid-item" data-groups="[&quot;[Digital Analog test 16 bit Dac]&quot;]"><a class="card card-hover h-100 border-0 shadow" href="/projects/16-bit-dac-fmc/"><img class="card-img-top" src="/images/16-bit-dac-fmc/irled_micro_display_overview-1.png" alt="Article image">
-                <div class="card-body text-center">
-                  <h3 class="h5 mb-1">16 Bit DAC FMC Card</h3><span class="fs-sm text-muted">[Digital Analog test 16 bit Dac]</span>
-                </div></a></article>
+                <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
+            
         
             
-            <article class="masonry-grid-item" data-groups="[&quot;&quot;]"><a class="card card-hover h-100 border-0 shadow" href="/projects/irsp-analog-design/"><img class="card-img-top" src="/img/demo/personal-portfolio/portfolio/01.jpg" alt="Article image">
-                <div class="card-body text-center">
-                  <h3 class="h5 mb-1">IRSP Analog Design</h3><span class="fs-sm text-muted"></span>
-                </div></a></article>
+                <li class="breadcrumb-item"><a href="/static-bs">Static bs</a></li>
+            
         
+            
+        
+    </ol>
+</nav>
+          <h1>Static Electromagnetic Simulator</h1>
         </div>
         
-      </div>
-    </div>
-  </div>
-</main>
+
+
+<time datetime="2021-07-25">Jul 25, 2021</time>
+        
+        <p class="py-3"><h2 id="static-bs">Static-bs</h2>
+<p>Is a simple 3D electro-magnetostatic biot-savart solving simulator written in python. I wrote this simulator for some research involving detecting the direction of flow of sea water with a static magnetic field. Charged particles in the water traveled through the magnetic field and caused a corresponding voltage gradient. Plates on a PCB board probed the voltage gradient and determined the direction of flow for the sea water. To my knowledge this has never been done before. Currently, I am writing a journal paper about this technique.</p>
+<p>Static-bs works by creating line segments of current and then adding up the cumulative effects of the different current segments at the defined observation points. The code is open source and available on my <a href="http://www.github.com/grungy/static-bs">github</a>.</p>
+<hr>
+<h2 id="what-questions-can-static-bs-answer">What questions can static-bs answer?</h2>
+<p>Static-bs can answer questions like these:</p>
+<ul>
+<li>What is the B field at a specific point for a coil of wire without having to use a large volume of    points like a finite element solver?</li>
+<li>What does that 3D field look like?</li>
+<li>How does the B field change if I have a bunch of coils oriented in a bunch of different ways?</li>
+<li>What is the electric field if I have charged particles moving through the B field?</li>
+<li>What is the voltage field I see from this electric field?</li>
+</ul>
+<h2 id="what-is-static-bs-not-good-at-doing">What is static-bs not good at doing?</h2>
+<ul>
+<li>Evaluating a large number of points or a lot of line segments quickly</li>
+</ul>
+<h2 id="output-examples">Output Examples</h2>
+<p><figure class="figure">
+    <img src="/images/static-bs/regular_octagon_helmholtz_71.53mm_radius.png" class="figure-img" alt="..." style="max-width: 600px;">
+    <figcaption class="figure-caption"></figcaption>
+</figure>
+<figure class="figure">
+    <img src="/images/static-bs/regular_octagon_helmholtz_71.53mm_radius_e_field.png" class="figure-img" alt="..." style="max-width: 600px;">
+    <figcaption class="figure-caption"></figcaption>
+</figure></p>
+</p>
 
 
         </div><footer class="footer pb-4 mt-sm-n5">
