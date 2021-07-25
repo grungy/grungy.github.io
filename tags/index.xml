@@ -8,38 +8,29 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Jul 2021 10:09:52 -0400</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blah</title>
-      <link>http://example.org/tags/blah/</link>
+      <title>current feedback</title>
+      <link>http://example.org/tags/current-feedback/</link>
       <pubDate>Sun, 25 Jul 2021 10:09:52 -0400</pubDate>
       
-      <guid>http://example.org/tags/blah/</guid>
+      <guid>http://example.org/tags/current-feedback/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>josh</title>
-      <link>http://example.org/tags/josh/</link>
-      <pubDate>Sat, 10 Jul 2021 19:02:14 -0400</pubDate>
+      <title>op-amp</title>
+      <link>http://example.org/tags/op-amp/</link>
+      <pubDate>Sun, 25 Jul 2021 10:09:52 -0400</pubDate>
       
-      <guid>http://example.org/tags/josh/</guid>
+      <guid>http://example.org/tags/op-amp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>bar</title>
-      <link>http://example.org/tags/bar/</link>
-      <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
+      <title>test</title>
+      <link>http://example.org/tags/test/</link>
+      <pubDate>Sun, 25 Jul 2021 10:09:52 -0400</pubDate>
       
-      <guid>http://example.org/tags/bar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>foo</title>
-      <link>http://example.org/tags/foo/</link>
-      <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
-      
-      <guid>http://example.org/tags/foo/</guid>
+      <guid>http://example.org/tags/test/</guid>
       <description></description>
     </item>
     

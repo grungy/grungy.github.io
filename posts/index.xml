@@ -17,42 +17,5 @@
 Summary: I replaced the feedback resistor elements with 510 ohm resistors for Rf and Rg. This gives a gain of two and the widest bandwidth, 1.4GHz, from the OPA695.</description>
     </item>
     
-    <item>
-      <title>My Second</title>
-      <link>http://example.org/posts/my-second.post/</link>
-      <pubDate>Sat, 10 Jul 2021 19:02:14 -0400</pubDate>
-      
-      <guid>http://example.org/posts/my-second.post/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/yaktocat.png&#34; alt=&#34;Image of Yaktocat&#34;&gt;
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
-aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.
-Sed velit dignissim sodales ut eu sem. Lectus urna duis convallis convallis
-tellus. Diam sit amet nisl suscipit adipiscing bibendum est. Sed felis eget
-velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
-ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id
-semper risus in hendrerit gravida rutrum.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
-      <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
-      
-      <guid>http://example.org/posts/my-first-post/</guid>
-      <description>&lt;figure class=&#34;figure&#34;&gt;
-    &lt;img src=&#34;http://example.org/img/blog/single/01.jpg&#34; class=&#34;figure-img&#34; alt=&#34;...&#34; style=&#34;max-width: 600px;&#34;&gt;
-    &lt;figcaption class=&#34;figure-caption&#34;&gt;Image of Yaktocat&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
-aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.
-Sed velit dignissim sodales ut eu sem. Lectus urna duis convallis convallis
-tellus. Diam sit amet nisl suscipit adipiscing bibendum est. Sed felis eget
-velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
-ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id
-semper risus in hendrerit gravida rutrum.&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
