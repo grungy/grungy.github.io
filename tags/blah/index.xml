@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 25 Jul 2021 10:09:52 -0400</lastBuildDate><atom:link href="http://example.org/tags/blah/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project 01</title>
-      <link>http://example.org/projects/project-01/</link>
+      <title>Current Feedback Op-amp Testing</title>
+      <link>http://example.org/posts/current-feedback-opamp-testing/</link>
       <pubDate>Sun, 25 Jul 2021 10:09:52 -0400</pubDate>
       
-      <guid>http://example.org/projects/project-01/</guid>
-      <description>dfdaf</description>
+      <guid>http://example.org/posts/current-feedback-opamp-testing/</guid>
+      <description>Big takeaway: Current feedback opamps are very particular about external component values. You must choose from the list of approved values in the datasheet or spend a lot of time hunting for an optimum value that gives you the gain and also provides stability.
+Summary: I replaced the feedback resistor elements with 510 ohm resistors for Rf and Rg. This gives a gain of two and the widest bandwidth, 1.4GHz, from the OPA695.</description>
     </item>
     
   </channel>

@@ -25,14 +25,5 @@
       <description>adasdkjasdfaj;</description>
     </item>
     
-    <item>
-      <title>Project 01</title>
-      <link>http://example.org/projects/project-01/</link>
-      <pubDate>Sun, 25 Jul 2021 10:09:52 -0400</pubDate>
-      
-      <guid>http://example.org/projects/project-01/</guid>
-      <description>dfdaf</description>
-    </item>
-    
   </channel>
 </rss>
