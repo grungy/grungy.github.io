@@ -4,42 +4,73 @@
   
   <url>
     <loc>http://example.org/</loc>
-    <lastmod>2021-05-10T21:11:49-04:00</lastmod>
+    <lastmod>2021-07-25T11:36:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/my-second-post/</loc>
-    <lastmod>2021-05-10T21:11:49-04:00</lastmod>
+    <loc>http://example.org/projects/project-03/</loc>
+    <lastmod>2021-07-25T11:36:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2021-05-10T21:11:49-04:00</lastmod>
+    <loc>http://example.org/projects/</loc>
+    <lastmod>2021-07-25T11:36:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/home/</loc>
-    <lastmod>2021-05-09T22:17:55-04:00</lastmod>
+    <loc>http://example.org/projects/project-02/</loc>
+    <lastmod>2021-07-25T10:09:57-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/bar/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
+    <loc>http://example.org/tags/blah/</loc>
+    <lastmod>2021-07-25T10:09:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/foo/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
+    <loc>http://example.org/projects/project-01/</loc>
+    <lastmod>2021-07-25T10:09:52-04:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/tags/</loc>
-    <lastmod>2021-05-09T12:50:23-04:00</lastmod>
+    <lastmod>2021-07-25T10:09:52-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2021-07-10T19:02:14-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/josh/</loc>
+    <lastmod>2021-07-10T19:02:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/my-second.post/</loc>
+    <lastmod>2021-07-10T19:02:14-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/bar/</loc>
+    <lastmod>2020-01-26T23:11:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/foo/</loc>
+    <lastmod>2020-01-26T23:11:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/my-first-post/</loc>
+    <lastmod>2020-01-26T23:11:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

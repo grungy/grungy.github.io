@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Josh Marks&#39; Blog!</title>
     <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content on Josh Marks&#39; Blog!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 May 2021 21:11:49 -0400</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 19:02:14 -0400</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Second Post</title>
-      <link>http://example.org/posts/my-second-post/</link>
-      <pubDate>Mon, 10 May 2021 21:11:49 -0400</pubDate>
+      <title>My Second</title>
+      <link>http://example.org/posts/my-second.post/</link>
+      <pubDate>Sat, 10 Jul 2021 19:02:14 -0400</pubDate>
       
-      <guid>http://example.org/posts/my-second-post/</guid>
-      <description>test test test.</description>
+      <guid>http://example.org/posts/my-second.post/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://octodex.github.com/images/yaktocat.png&#34; alt=&#34;Image of Yaktocat&#34;&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
+aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.
+Sed velit dignissim sodales ut eu sem. Lectus urna duis convallis convallis
+tellus. Diam sit amet nisl suscipit adipiscing bibendum est. Sed felis eget
+velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
+ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id
+semper risus in hendrerit gravida rutrum.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My First Post</title>
       <link>http://example.org/posts/my-first-post/</link>
-      <pubDate>Sun, 09 May 2021 12:50:23 -0400</pubDate>
+      <pubDate>Sun, 26 Jan 2020 23:11:13 +0000</pubDate>
       
       <guid>http://example.org/posts/my-first-post/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      <description>&lt;figure class=&#34;figure&#34;&gt;
+    &lt;img src=&#34;http://example.org/img/blog/single/01.jpg&#34; class=&#34;figure-img&#34; alt=&#34;...&#34; style=&#34;max-width: 600px;&#34;&gt;
+    &lt;figcaption class=&#34;figure-caption&#34;&gt;Image of Yaktocat&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor
 aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis.
 Sed velit dignissim sodales ut eu sem. Lectus urna duis convallis convallis

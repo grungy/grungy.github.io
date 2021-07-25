@@ -1,112 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
 	<meta name="generator" content="Hugo 0.80.0" />
-    <head>
     <meta charset="utf-8">
+    <title>Josh Marks&#39; Blog!</title>
+    
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
     
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    
+    <link rel="stylesheet" media="screen" href="/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="/vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+    
+    <link rel="stylesheet" media="screen" href="/css/theme.min.css">
+  </head><body>
+<div class="page-loading active">
+  <div class="page-loading-inner">
+    <div class="page-spinner"></div><span>Loading...</span>
+  </div>
+</div>
+<main class="page-wrapper">
+  
+  <div class="modal fade" id="modal-contact" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header mb-1">
+          <h4 class="modal-title">What project are you looking for?</h4>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="modal-body needs-validation py-4" novalidate>
+          <div class="btn-group mb-3">
+            <div class="me-2 mb-2">
+              <input class="btn-check" type="radio" name="services" id="illustration" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="illustration">Prototyping</label>
+            </div>
+            <div class="me-2 mb-2"> 
+              <input class="btn-check" type="radio" name="services" id="packaging" autocomplete="off">
+              <label class="btn btn-outline-primary" for="packaging">Firmware</label>
+            </div>
+            <div class="me-2 mb-2">
+              <input class="btn-check" type="radio" name="services" id="branding" autocomplete="off">
+              <label class="btn btn-outline-primary" for="branding">EMC</label>
+            </div>
+          </div>
+          <div class="input-group mb-3"><i class="ai-user position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+            <input class="form-control rounded" type="text" placeholder="Name" required>
+          </div>
+          <div class="input-group mb-3"><i class="ai-mail position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+            <input class="form-control rounded" type="email" placeholder="Email" required>
+          </div>
+          <div class="mb-3 pb-1">
+            <textarea class="form-control" rows="4" placeholder="Project description" required></textarea>
+          </div>
+          <div class="row py-2">
+            <div class="col-lg-6 col-md-8">
+              <button class="btn btn-primary d-block w-100" type="submit">Send Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    
+      
+      <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-shadow navbar-sticky" data-scroll-header data-fixed-element>
+        <div class="navbar-search bg-light">
+            <div class="container d-flex flex-nowrap align-items-center"><i class="ai-search fs-xl"></i>
+              <input class="form-control form-control-xl navbar-search-field" type="text" placeholder="Search site">
+              <div class="d-flex align-items-center"><span class="text-muted fs-xs mt-1 d-none d-sm-inline">Close</span>
+                <button class="btn-close p-2" type="button" data-bs-toggle="search"></button>
+              </div>
+            </div>
+          </div>
+          <div class="container px-0 px-xl-3">
+            <button class="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="/index.html"><img class="d-none d-lg-block" src="/img/jam/logo-dark.png" alt="Around" width="100"><img class="d-lg-none" src="/img/jam/jam-logo.png" alt="Around" width="58"></a>
+            <div class="d-flex align-items-center order-lg-3 ms-lg-auto"><a class="btn btn-primary d-lg-inline-block d-none" href="#modal-contact" data-bs-toggle="modal">Contact me</a><a class="btn btn-sm btn-primary d-lg-none d-inline-block" href="#modal-contact" data-bs-toggle="modal">Contact me</a></div>
+            <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+              <div class="offcanvas-header navbar-shadow">
+                <h5 class="mt-1 mb-0">Menu</h5>
+                <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              
+              <ul class="navbar-nav">
+                
+                <a class="nav-link" href="/posts/">
+                    
+                    Blog
+                </a>
+                
+                <a class="nav-link" href="/projects/">
+                    
+                    Projects
+                </a>
+                
+                <a class="nav-link" href="/books/">
+                    
+                    Books
+                </a>
+                
+                <a class="nav-link" href="/about/">
+                    
+                    About Me
+                </a>
+                
+              </ul>
+            </div>
+            
+          
+        </div>
+      </header><div id="content">
+
+
+      
+      <section class="container mb-3 my-md-0 py-5 py-md-6">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-5 order-md-1 order-2 text-md-start text-center">
+            <h1 class="display-4 mb-lg-4 mb-3">Hey, I’m Josh</h1>
+            <h2 class="mb-lg-5 mb-4 text-muted">Electrical Engineer &amp; Researcher </h2>
+            <div class="text-nowrap"><a class="btn btn-translucent-primary me-3" href="#"><i class="ai-arrow-down-circle mt-n1 me-2"></i>Download CV</a><a class="btn btn-outline-primary" href="#portfolio" data-scroll>Portfolio</a></div>
+          </div>
+          <div class="col-lg-5 col-md-7 order-md-2 order-1 mb-md-0 mb-grid-gutter"><img src="/img/jam/rocket.svg" alt="Rocket Ship"></div>
+        </div>
+      </section>
+      
+      <section class="bg-faded-primary position-relative py-md-7 py-5">
+        <div class="container my-2 my-md-0">
+          <div class="row align-items-center">
+            <div class="col-md-5 mb-md-0 mb-5 pb-md-0 pb-3"><img class="d-block mx-md-0 mx-auto" src="/img/demo/personal-portfolio/services/illustration.svg" alt="Illustration"></div>
+            <div class="col-lg-6 offset-lg-1 col-md-7 text-md-start text-center">
+              <div class="mx-md-0 mx-auto" style="max-width: 500px;">
+                <h2 class="mb-md-5 mb-4">What I do best</h2>
+                
+                <div class="d-md-flex align-items-start d-block mb-4 pb-2"><img class="me-md-4 mb-md-0 mb-4" src="/img/demo/personal-portfolio/services/01.svg" alt="Icon">
+                  <div class="ps-md-2">
+                    <h3 class="h6 mb-2">Technical Communication</h3>
+                    <p class="mb-0 fs-sm">technical</p>
+                  </div>
+                </div>
+                
+                <div class="d-md-flex align-items-start d-block mb-4 pb-2"><img class="me-md-4 mb-md-0 mb-4" src="/img/demo/personal-portfolio/services/02.svg" alt="Icon">
+                  <div class="ps-md-2">
+                    <h3 class="h6 mb-2">System Architecture and Test</h3>
+                    <p class="mb-0 fs-sm">dakfslfj</p>
+                  </div>
+                </div>
+                
+                <div class="d-md-flex align-items-start d-block"><img class="me-md-4 mb-md-0 mb-4" src="/img/demo/personal-portfolio/services/03.svg" alt="Icon">
+                  <div class="ps-md-2">
+                    <h3 class="h6 mb-2">Methodical and Persistence</h3>
+                    <p class="mb-0 fs-sm">dfkajl;djf</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shape shape-top shape-curve bg-body">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+            <path fill="currentColor" d="M3000,185.4V0H0v185.4C496.4,69.8,996.4,12,1500,12S2503.6,69.8,3000,185.4z"></path>
+          </svg>
+        </div>
+      </section>
+      
+      <section class="overflow-hidden" id="portfolio">
+        <div class="container py-lg-7 py-md-6 py-5 my-2 my-md-0">
+          <h2 class="mb-3 text-center">My portfolio</h2>
+          <p class="mb-4 pb-md-2 text-muted text-center">Most recent projects I have completed</p>
+          <div class="masonry-filterable">
+            
+            
+            <div class="masonry-grid" data-columns="3">
+              
+          
+          <article class="masonry-grid-item" data-groups="[&quot;&quot;]"><a class="card card-hover h-100 border-0 shadow" href="/projects/project-03/"><img class="card-img-top" src="/img/demo/personal-portfolio/portfolio/01.jpg" alt="Article image">
+              <div class="card-body text-center">
+                <h3 class="h5 mb-1">Project 03</h3><span class="fs-sm text-muted"></span>
+              </div></a>
+          </article>
+            
+          
+          <article class="masonry-grid-item" data-groups="[&quot;&quot;]"><a class="card card-hover h-100 border-0 shadow" href="/projects/project-02/"><img class="card-img-top" src="/img/demo/personal-portfolio/portfolio/01.jpg" alt="Article image">
+              <div class="card-body text-center">
+                <h3 class="h5 mb-1">Project 02</h3><span class="fs-sm text-muted"></span>
+              </div></a>
+          </article>
+            
+          
+          <article class="masonry-grid-item" data-groups="[&quot;blah&quot;]"><a class="card card-hover h-100 border-0 shadow" href="/projects/project-01/"><img class="card-img-top" src="/img/demo/personal-portfolio/portfolio/01.jpg" alt="Article image">
+              <div class="card-body text-center">
+                <h3 class="h5 mb-1">Project 01</h3><span class="fs-sm text-muted">blah</span>
+              </div></a>
+          </article>
+            
+            </div>
+          </div>
+          <div class="pt-3 text-center"><a class="btn btn-primary" href="/projects">See More</a></div>
+        </div>
+      </section>
+      
+      <section class="bg-faded-primary position-relative py-md-7 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-7 order-md-1 order-2">
+              
+              <div class="tns-carousel-wrapper">
+                <div class="tns-carousel-inner" data-carousel-options="{&quot;gutter&quot;: 20, &quot;responsive&quot;: {&quot;0&quot;: {&quot;nav&quot;: true, &quot;controls&quot;: false}, &quot;991&quot;: {&quot;nav&quot;: false, &quot;controls&quot;: true}}}">
+                  
+                  <blockquote class="blockquote mt-3 mb-0">
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum facere officia ratione quos esse corporis cum.</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis voluptatum deleniti atque.</p>
+                    <footer class="d-flex align-items-center"><img class="rounded-circle" src="img/demo/personal-portfolio/testimonials/01.jpg" alt="Tim Brooks" width="42">
+                      <div class="text-heading fs-md fw-medium ps-2 ms-1">Tim Brooks</div>
+                    </footer>
+                  </blockquote>
+                  
+                  <blockquote class="blockquote mt-3 mb-0">
+                    <p>Consectetur adipisicing elit. Minus facilis asperiores deleniti ipsum quod ipsa voluptate dicta quasi. Dignissimos accusantium temporibus sunt culpa minima, earum reprehenderit aspernatur inventore magnam labore.</p>
+                    <p>Velit modi neque placeat consequatur voluptatibus odit aut iste dolorum dolorem magnam.</p>
+                    <footer class="d-flex align-items-center"><img class="rounded-circle" src="img/demo/personal-portfolio/testimonials/02.jpg" alt="Tim Brooks" width="42">
+                      <div class="text-heading fs-md fw-medium ps-2 ms-1">Serenity Edwards</div>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-lg-1 order-md-2 order-1 mb-md-0 mb-grid-gutter"><img class="d-block mx-md-0 mx-auto" src="img/demo/personal-portfolio/testimonials/illustration.svg" alt="Illustration"></div>
+          </div>
+        </div>
+        <div class="shape shape-bottom shape-curve bg-body">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+            <path fill="currentColor" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+          </svg>
+        </div>
+      </section>
+      
+      <section class="position-relative py-6 bg-no-repeat bg-position-center-bottom overflow-hidden" style="background-image: url(/img/demo/personal-portfolio/socials/bg-shape.png);">
         
-        <link rel="stylesheet" href="/css/main.min.e2aa831d995e5b2d63a1ecda993979ddc286bea3f1795f674ffa4418b0de6d5a.css" integrity="sha256-4qqDHZleWy1joezamTl53cKGvqPxeV9nT/pEGLDebVo="/>
-        
-    
-
-    
-    <title>My New Hugo Site</title>
-</head>
-
-
-
-</head>
-<body><main class="bg-white max-w-2xl mx-auto py-1">
-        <header x-data="{ mobileMenuOpen : false }" class="uppercase h-24 sm:h-32 flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-white py-6 px-6 relative">
-            <button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
-                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-            </button>
-            <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
-            :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"  @click.away="mobileMenuOpen = false">
-                
-                <a class="py-2 px-6 flex hover:text-grey" href="/">
-                
-                
-                <i data-feather="home"></i>
-                
-                
-                Home
-                </a>
-                
-                <a class="py-2 px-6 flex hover:text-grey" href="/posts/">
-                
-                
-                <i data-feather="pen-tool"></i>
-                
-                
-                Posts
-                </a>
-                
-                <a class="py-2 px-6 flex hover:text-grey" href="/projects/">
-                
-                
-                <i data-feather="cpu"></i>
-                
-                
-                Projects
-                </a>
-                
-                <a class="py-2 px-6 flex hover:text-grey" href="/tags/">
-                
-                
-                <i data-feather="tag"></i>
-                
-                
-                Tags
-                </a>
-                
-            </nav>
-        </header>
-
-                        
-            
-            <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
-
-
-
-
-
-
-
-<div class="flex relative z-20 items-center">
-    <div class="mx-auto px-6 flex flex-col justify-between items-center relative py-4">
-        <div class="flex flex-col">
-            
-            <img class="rounded-full w-28 mx-auto" src="http://example.org/home/bio-photo.jpeg" alt="bio-photo.jpeg">
-            
-            <p class="text-3xl my-6 text-center dark:text-white">
-                Hi, I&#x27;m Josh
-            </p>
-            <h2 class="max-w-3xl text-xl md:text-xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2">
-                I like taking products from conception to people&rsquo;s hands.
-            </h2>
-
-            <p class="max-w-3xl"></p>
-            
+        <div class="parallax">
+          <div class="parallax-layer" data-depth="0.1"><img src="/img/demo/personal-portfolio/socials/figure-1.png" alt="Layer 1"></div>
+          <div class="parallax-layer" data-depth="0.15"><img src="/img/demo/personal-portfolio/socials/figure-2.png" alt="Layer 2"></div>
+          <div class="parallax-layer" data-depth="0.25"><img src="/img/demo/personal-portfolio/socials/figure-3.png" alt="Layer 3"></div>
         </div>
         
-        
-    </div>
+        <div class="d-flex align-items-center position-absolute w-100 h-100" style="top: 0; left: 0; z-index: 9">
+          <div class="container">
+            <h2 class="mb-4 pb-sm-3 text-center">Follow me</h2>
+            <div class="text-center"><a class="btn btn-lg text-white mb-2 me-sm-4 me-2" href="https://www.github.com/grungy" style="background-color: #ea4c89;"><i class="ai-github lead me-2"></i>Github</a><a class="btn btn-lg text-white mb-2" href="#" style="background-color: #1969ff"><i class="ai-linkedin lead me-2"></i>LinkedIn</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+
+        </div><footer class="footer pb-4 mt-sm-n5">
+    <div class="container fs-sm text-center"><span class="text-muted">© 2021 All rights reserved. Made by Josh Marks</span></div>
+</footer><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
     
-</div>
-
-
-
-    <div class="flex justify-center text-black py-1"><p class="footer text-center">Copyright (c) 2021 Josh Marks</p></div>
-
-</main><script src="/js/feather.min.js"></script>
-<script>
-  feather.replace()
-</script></body>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="/vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="/vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
+    <script src="/vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
+    <script src="/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    
+    <script src="/js/theme.min.js"></script></body>
 </html>
