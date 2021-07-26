@@ -6,7 +6,17 @@
     <description>Recent content on Josh Marks&#39; Blog!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jul 2021 10:09:52 -0400</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 20:21:44 -0400</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Books I&#39;ve Known and Loved</title>
+      <link>http://example.org/posts/books/</link>
+      <pubDate>Sun, 25 Jul 2021 20:21:44 -0400</pubDate>
+      
+      <guid>http://example.org/posts/books/</guid>
+      <description>A non-exhaustive list of books I&amp;rsquo;ve really enjoyed and am glad I bought for my bookshelf at home. Let me know if you find a gem! Or if you have a book that I should check out. I&amp;rsquo;m always looking for a well written book.
+Electrical Engineering  High-Speed Digital Design: A Handbook of Black Magic High Speed Signal Propogation: Advanced Black Magic Electromagnetic Compatibility Engineering The Art of Electronics The Art of Electronics: The x Chapters Massive MIMO Networks: Spectral, Energy, and Hardware Efficiency:  Satellite Communications Payload and System Microwave Oven Repair Building Electro-Optical Systems: Making It all Work The Design of CMOS Radio-Frequency Integrated Circuits Switching Power Supplies A - Z Understanding Delta-Sigma Data Converters Analog Circuit Design: A Tutorial Guide to Applications and Solutions  Software Engineering  Test Driven Development for Embedded C Artificial Intelligence: A Modern Approach The Clean Coder: A Code of Conduct for Professional Programmers Structure and Interpretation of Computer Programs Design Patterns: Elements of Reusable Object-Oriented Software HCS08 Unleashed: Designer&amp;rsquo;s Guide To the HCS08 Microcontrollers  Math  Linear Algebra Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control The Art of Problem Solving, Vol.</description>
+    </item>
+    
     <item>
       <title>Current Feedback Op-amp Testing</title>
       <link>http://example.org/posts/current-feedback-opamp-testing/</link>
