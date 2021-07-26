@@ -6,43 +6,7 @@
     <description>Recent content in Tags on Josh Marks&#39; Blog!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jul 2021 17:46:07 -0400</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>16 bit Dac</title>
-      <link>http://example.org/tags/16-bit-dac/</link>
-      <pubDate>Sun, 25 Jul 2021 17:46:07 -0400</pubDate>
-      
-      <guid>http://example.org/tags/16-bit-dac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Analog</title>
-      <link>http://example.org/tags/analog/</link>
-      <pubDate>Sun, 25 Jul 2021 17:46:07 -0400</pubDate>
-      
-      <guid>http://example.org/tags/analog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Digital</title>
-      <link>http://example.org/tags/digital/</link>
-      <pubDate>Sun, 25 Jul 2021 17:46:07 -0400</pubDate>
-      
-      <guid>http://example.org/tags/digital/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>http://example.org/tags/test/</link>
-      <pubDate>Sun, 25 Jul 2021 17:46:07 -0400</pubDate>
-      
-      <guid>http://example.org/tags/test/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 25 Jul 2021 10:09:52 -0400</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>current feedback</title>
       <link>http://example.org/tags/current-feedback/</link>
@@ -58,6 +22,15 @@
       <pubDate>Sun, 25 Jul 2021 10:09:52 -0400</pubDate>
       
       <guid>http://example.org/tags/op-amp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>http://example.org/tags/test/</link>
+      <pubDate>Sun, 25 Jul 2021 10:09:52 -0400</pubDate>
+      
+      <guid>http://example.org/tags/test/</guid>
       <description></description>
     </item>
     

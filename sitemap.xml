@@ -1,90 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>http://example.org/projects/cmos-yield-analysis/</loc>
-    <lastmod>2021-07-25T18:12:41-04:00</lastmod>
-  </url>
-  
   <url>
     <loc>http://example.org/</loc>
-    <lastmod>2021-07-25T18:12:41-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-25T11:36:35-04:00</lastmod>
+  </url><url>
+    <loc>http://example.org/projects/project-03/</loc>
+    <lastmod>2021-07-25T11:36:35-04:00</lastmod>
+  </url><url>
     <loc>http://example.org/projects/</loc>
-    <lastmod>2021-07-25T18:12:41-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/projects/static-bs/</loc>
-    <lastmod>2021-07-25T18:04:35-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/16-bit-dac/</loc>
-    <lastmod>2021-07-25T17:46:07-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/projects/16-bit-dac-fmc/</loc>
-    <lastmod>2021-07-25T17:46:07-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/analog/</loc>
-    <lastmod>2021-07-25T17:46:07-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/digital/</loc>
-    <lastmod>2021-07-25T17:46:07-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2021-07-25T17:46:07-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/test/</loc>
-    <lastmod>2021-07-25T17:46:07-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/projects/irsp-analog-design/</loc>
+    <lastmod>2021-07-25T11:36:35-04:00</lastmod>
+  </url><url>
+    <loc>http://example.org/projects/project-02/</loc>
     <lastmod>2021-07-25T10:09:57-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/posts/</loc>
     <lastmod>2021-07-25T10:09:52-04:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/tags/current-feedback/</loc>
     <lastmod>2021-07-25T10:09:52-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/posts/current-feedback-opamp-testing/</loc>
     <lastmod>2021-07-25T10:09:52-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/tags/op-amp/</loc>
     <lastmod>2021-07-25T10:09:52-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2021-07-25T10:09:52-04:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/test/</loc>
+    <lastmod>2021-07-25T10:09:52-04:00</lastmod>
+  </url><url>
     <loc>http://example.org/about/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://example.org/categories/</loc>
   </url>
-  
 </urlset>

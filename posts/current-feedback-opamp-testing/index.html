@@ -205,6 +205,7 @@
       </header><div id="content">
 <div class="container">
     
+    
     <div class="row justify-content-center">
       
       <div class="col-lg-9 py-4 mb-2 mb-sm-0 pb-sm-5">
@@ -301,7 +302,7 @@
 <h2 id="bit-resolution">Bit Resolution:</h2>
 <p>A crude measurement of bit resolution can be done by measuring the rough noise level. This measurement is shown in the following image and is ~30mV.</p>
 <p>To get the amount of bits lost first the LSB must be calculated:</p>
-<p>Max voltage / 2^num_bits = voltage/bit</p>
+<p>$$\frac{Max voltage}{2^{Num Bits}} = \frac{voltage}{bit}$$</p>
 
 <div class="table-responsive">
     <table class="table">
@@ -323,7 +324,7 @@
       </tbody>
     </table>
   </div>
-<p>Using our measured noise margin of 42mV the number of lost numbers can be calculated. 0.042/7.62939*10^-5 = 550. Taking the log base 2 of 550 gives us the number of bits lost: 9.104605043. And subtracting this value from 16 bits gives us the remaining bits we have: 6.895394957. So 6 or 7 bits. I also measured the signal generator directly and it had the same amount of noise. So, the noise level seems to be inherent in the scope or signal generator.</p>
+<p>Using our measured noise margin of 42mV the number of lost numbers can be calculated. \(\frac{0.042}{7.62939*10^{-5}} = 550\). Taking the log base 2 of 550 gives us the number of bits lost: 9.104605043. And subtracting this value from 16 bits gives us the remaining bits we have: 6.895394957. So 6 or 7 bits. I also measured the signal generator directly and it had the same amount of noise. So, the noise level seems to be inherent in the scope or signal generator.</p>
 <figure class="figure">
     <img src="/images/current-feedback-testing/trace10.png" class="figure-img" alt="..." style="max-width: 600px;">
     <figcaption class="figure-caption"></figcaption>
@@ -352,6 +353,9 @@
     <script src="/vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
     <script src="/vendor/lg-zoom.js/dist/lg-zoom.min.js"></script>
     <script src="/vendor/lg-video.js/dist/lg-video.min.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
     
     <script src="/js/theme.min.js"></script></body>
 </html>
