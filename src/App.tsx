@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import { FaTwitter, FaGithub, FaLinkedin, FaEye, FaBlog } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 import './App.css';
-import SpaceshipRLBackground from './SpaceshipRLBackground';
+import SnakeBackground from './SnakeBackground';
 
 const profilePic = '/imgs/bio-photo.jpeg'; // Placeholder, replace with your own image if desired
 
-const socials = [
-  { href: 'https://twitter.com/', icon: '🐦', label: 'Twitter' },
-  { href: 'https://github.com/', icon: '💻', label: 'GitHub' },
-  { href: 'https://www.linkedin.com/in/joshmarks/', icon: '👔', label: 'LinkedIn' },
-  { href: 'https://joshmarks.substack.com', icon: '👀', label: 'Substack' },
+type Social = {
+  href: string;
+  icon: IconType;
+  label: string;
+};
+
+const socials: Social[] = [
+  { href: 'https://twitter.com/', icon: FaTwitter, label: 'Twitter' },
+  { href: 'https://github.com/', icon: FaGithub, label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/joshmarks/', icon: FaLinkedin, label: 'LinkedIn' },
+  { href: 'https://joshmarks.substack.com', icon: FaEye, label: 'Substack' },
+  { href: 'https://yourblog.com', icon: FaBlog, label: 'Blog' },
 ];
 
 const history = [
@@ -114,10 +123,47 @@ const featured = [
 ];
 
 function App() {
+  // Refs for hero elements
+  const profileRef = useRef<HTMLImageElement>(null);
+  const nameRef = useRef<HTMLHeadingElement>(null);
+  const subtitleRef = useRef<HTMLHeadingElement>(null);
+  const socialsRef = useRef<HTMLDivElement>(null);
+  const heroSectionRef = useRef<HTMLElement>(null);
+  const [obstacles, setObstacles] = useState<{x: number, y: number, width: number, height: number}[]>([]);
+
+  useEffect(() => {
+    function updateObstacles() {
+      if (!heroSectionRef.current) return;
+      const canvasWidth = 576; // match SnakeBackground canvas width
+      const canvasHeight = 324; // match SnakeBackground canvas height
+      const heroRect = heroSectionRef.current.getBoundingClientRect();
+      function mapRectToCanvas(domRect: DOMRect | undefined) {
+        if (!domRect) return null;
+        // Map DOM coordinates to canvas coordinates (relative to hero section)
+        const x = ((domRect.left - heroRect.left) / heroRect.width) * canvasWidth;
+        const y = ((domRect.top - heroRect.top) / heroRect.height) * canvasHeight;
+        const width = (domRect.width / heroRect.width) * canvasWidth;
+        const height = (domRect.height / heroRect.height) * canvasHeight;
+        return { x, y, width, height };
+      }
+      const rects = [
+        mapRectToCanvas(profileRef.current?.getBoundingClientRect()),
+        mapRectToCanvas(nameRef.current?.getBoundingClientRect()),
+        mapRectToCanvas(subtitleRef.current?.getBoundingClientRect()),
+        mapRectToCanvas(socialsRef.current?.getBoundingClientRect()),
+      ].filter(Boolean) as {x: number, y: number, width: number, height: number}[];
+      setObstacles(rects);
+    }
+    updateObstacles();
+    window.addEventListener('resize', updateObstacles);
+    return () => window.removeEventListener('resize', updateObstacles);
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
       <section
+        ref={heroSectionRef}
         className="hero-section"
         style={{
           position: 'relative',
@@ -127,28 +173,10 @@ function App() {
           marginBottom: '2.5rem',
           overflow: 'hidden',
           background: 'linear-gradient(120deg, hsl(200, 70%, 78%) 0%, hsl(200, 70%, 70%) 100%)',
+          minHeight: '456px',
         }}
       >
-        {/* RL Agent as hero background */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 1,
-            opacity: 0.18,
-            pointerEvents: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <div style={{ width: '100%', height: '100%' }}>
-            <SpaceshipRLBackground />
-          </div>
-        </div>
+        {/* RL Agent as hero background (moved below SVGs) */}
         {/* SVG Backgrounds from Josh Comeau's site (exact copy) */}
         <svg
           width="100%"
@@ -175,10 +203,29 @@ function App() {
             d="M2617 234C2496.99 229.765 2429.72 276.108 2400.53 303.732C2388.43 315.177 2372.83 323.5 2356.18 323.5H2135.62C2111.05 323.5 2089.95 305.704 2082.79 282.198C2061.56 212.504 2001.53 78.3592 1852.75 71.0003C1691 63 1645 185 1622 186.5C1599 188 1587 88.5 1368.5 88.5C1211 88.5 1180 157.5 1158.4 161.5C1136.8 165.501 1074.33 111 931 129.5C787.671 148 789.676 214.5 770 214C750.324 213.5 736.5 129.5 535.029 142.5C416.863 150.125 382.163 211.07 373.669 260.166C368.141 292.123 343.421 323.5 310.99 323.5H280.024C249.079 323.5 225.052 295.503 224.331 264.567C222.732 195.98 200.305 92 79 92C17.4738 92 3.47982 128.37 0.653094 139.38C0.122368 141.447 0 143.571 0 145.705V398C0 412.36 11.6404 424 25.9998 424H5100C5127.61 424 5150 401.615 5150 374V365V181.851C5150 149.381 5119.54 125.514 5087.89 132.773C5054.67 140.392 5019.02 148.008 5011.31 147.5C4996.11 146.501 4966.41 99.9071 4859.43 95.5003C4731 90.2096 4684 213.5 4663 213.5H4531.84C4513.48 213.5 4496.63 203.435 4485.66 188.715C4451.8 143.286 4365.08 52.9127 4220.67 71.0003C4061 91.0002 4023.5 150.5 4006.5 150.5C3989.5 150.5 3925.6 96.5092 3797.5 100.5C3637 105.5 3599 235.5 3589 231.5C3563.12 221.148 3430.32 192.596 3405.38 180.145C3382.96 168.954 3354.61 161.5 3318.87 161.5C3175.43 161.5 3129.73 224 3116.87 224C3104 224 3073.62 179.5 2953.5 179.5C2782 179.5 2771.92 286 2756 284.5C2740.08 283 2721.1 237.674 2617 234Z"
           />
         </svg>
+        {/* SnakeBackground above SVGs */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            pointerEvents: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <div style={{ width: '100%', height: '100%' }}>
+            <SnakeBackground obstacles={obstacles} />
+          </div>
+        </div>
         {/* Main hero content (profile, name, RL agent, etc.) */}
         <div style={{ position: 'relative', zIndex: 2, maxWidth: 900, margin: '0 auto', padding: '0 1rem' }}>
           {/* Profile Photo */}
           <img
+            ref={profileRef}
             src={profilePic}
             alt="Profile"
             style={{
@@ -192,16 +239,20 @@ function App() {
               background: '#eee',
             }}
           />
-          <h1 style={{ fontSize: '2.7rem', fontWeight: 700, margin: 0, color: '#4242fa', letterSpacing: '-1px' }}>
+          <h1 ref={nameRef} style={{ fontSize: '2.7rem', fontWeight: 700, margin: 0, color: '#4242fa', letterSpacing: '-1px' }}>
             Josh Marks
           </h1>
-          <h2 style={{ fontSize: '1.3rem', fontWeight: 400, color: '#6c7693', margin: '0.7rem 0 1.2rem 0' }}>
-            I like to build and test cool hardware and software 🧠🤖💡
+          <h2 ref={subtitleRef} style={{ fontSize: '1.3rem', fontWeight: 400, color: '#6c7693', margin: '0.7rem 0 1.2rem 0' }}>
+            I like to build and test Machine Learning models optimized for hardware 🧠🤖💡
           </h2>
-          <div className="socials" style={{ marginBottom: '1.5rem' }}>
+          <div
+            ref={socialsRef}
+            className="socials"
+            style={{ marginBottom: '1.5rem', marginTop: '-1.0rem' }}
+          >
             {socials.map((s, i) => (
               <a key={i} href={s.href} target="_blank" rel="noopener noreferrer" style={{ margin: '0 0.7rem', color: 'inherit', textDecoration: 'none', fontSize: '1.3em' }} title={s.label}>
-                {s.icon}
+                <s.icon />
               </a>
             ))}
           </div>
